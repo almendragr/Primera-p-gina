@@ -1,0 +1,44 @@
+/**/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#contenido {
+    width: 1000px;
+    height: 900px;
+    background-color: rgb(123, 65, 177);
+}
+
+
+.perfil {
+    width: 250px;
+    height: 600px;
+    background-color:darkgray;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.perfil-datos {
+    width: auto;
+    height: 50px;
+    background-color: darkslategray;
+}
+
+.principal {
+    width:740px;
+    height: 600px;
+    background-color:darkslateblue;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.navegacion {
+    list-style-type: none;
+    height: 50px;
+    background-color: forestgreen;
+
+}
+.navegacion li{
+    display: inline-block;
+
+}
