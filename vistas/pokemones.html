@@ -1,0 +1,6 @@
+fetch("https://pokeapi.co/api/v2/pokemon/mew")
+.then(respuesta => respuesta.json())
+.then(datos => {
+    console.log(datos.nombre)
+})
+
