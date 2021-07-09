@@ -1,6 +1,23 @@
-fetch("https://pokeapi.co/api/v2/pokemon/mew")
-.then(respuesta => respuesta.json())
-.then(datos => {
-    console.log(datos.nombre)
-})
+<!DOCTYPE html>
 
+<html>
+
+<head></head>
+
+<body>
+
+
+
+    <input id="txt-busqueda" type="text">
+
+    <button id="btn-buscar" onclick="buscarPokemon()">Buscar pokemon</button>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <script src="../ajax/llamados_api.js"></script>
+
+</body>
+
+</html>

@@ -1,11 +1,14 @@
-<!DOCTYPE html>
-<html>
+function buscarPokemon(){
+    nombre_pokemon = $("#txt-busqueda").val()
 
-<head>
-</head>
+    fetch("https://pokeapi.co/api/v2/pokemon/" + nombre_pokemon)
+    .then(respuesta => respuesta.json())
+    .then(datos => {
 
-<body>
-    <script src="../ajax/llamados_api.js"></script>
-</body>
-
-</html>
+        nueva_etiqueta = `
+            <img src="${datos.sprites.front_default}">
+        `
+        $("#btn-buscar").after(nueva_etiqueta)
+    })
+    .catch(error => console.log(error))
+}
