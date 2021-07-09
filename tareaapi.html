@@ -5,33 +5,13 @@
 <head></head>
 
 <body>
-
-
-
     <input id="txt-busqueda" type="text">
 
-    <button id="btn-buscar" onclick="buscarPokemon()">Buscar pokemon</button>
-
-    const data = null;
-    
-    const xhr = new XMLHttpRequest();
-    xhr.withCredentials = true;
-    
-    xhr.addEventListener("readystatechange", function () {
-    if (this.readyState === this.DONE) {
-    console.log(this.responseText);
-    }
-    });
-    
-    xhr.open("GET", "https://currency-exchange.p.rapidapi.com/exchange?to=MYR&from=SGD&q=1.0");
-    xhr.setRequestHeader("x-rapidapi-key", "135b802582mshc06e1c2cfe168d6p13a057jsn8d2335e3bfae");
-    xhr.setRequestHeader("x-rapidapi-host", "currency-exchange.p.rapidapi.com");
-    
-    xhr.send(data);
+    <button id="btn-buscar" onclick="cambio_moneda()">Cambio de moneda</button>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 
-    <script src="../ajax/llamados_api.js"></script>
+    <script src="ajax/tareaapi.js"></script>
 
 </body>
 
